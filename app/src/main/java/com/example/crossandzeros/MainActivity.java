@@ -63,7 +63,22 @@ public class MainActivity extends AppCompatActivity {
                pop(arr[0][2]);
                clear();
            }
-
+           int check=0;
+for(int i=0;i<3;i++)
+{
+    for(int j=0;j<3;j++)
+    {
+        if(arr[i][j]==0)
+        {
+            check++;
+        }
+    }
+}
+if(check==0)
+{
+    pop(0);
+    clear();
+}
 
         }
     }
@@ -74,11 +89,13 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "zero wins", Toast.LENGTH_SHORT).show();
 
         }
-        if(a==2)
+       else  if(a==2)
         {
             Toast.makeText(MainActivity.this, "cross wins", Toast.LENGTH_SHORT).show();
 
         }
+       else  Toast.makeText(MainActivity.this, "Its a Draw", Toast.LENGTH_SHORT).show();
+
     }
     public void clear()
     {
