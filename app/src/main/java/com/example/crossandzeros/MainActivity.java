@@ -117,6 +117,14 @@ if(check==0)
         i8.setImageResource(0);
         ImageView i9=(ImageView)findViewById(R.id.r3c3);
         i9.setImageResource(0);
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                arr[i][j]=0;
+            }
+        }
+        ActiveImage=0;
     }
 
 
